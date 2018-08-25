@@ -62,7 +62,8 @@
             \n\n
             Injections slowdown
             \n While the code has been commented out, the lag injection method was created to simulate less than ideal network conditions where internet is slow and taking a while to connect. The progress circle was made to show users that we are still trying to fetch their data. If a 200 response is unable to be grabbed after 15 seconds, the response will come back automatically as network error and to try again.
-
+            \n\n
+            Github Integration
 
 "
             android:textAlignment="viewStart"
