@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">BookApp</string>
+    <string name="title_activity_advance">AdvanceActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="bottom_text">
+        <item>       Book lookup App; Notes
+        \n This demo app was intended for testing purposes only. While fully functional for what it is,
+        I intended to use it as grounds for testing features and functions that would a good addition
+        to such an app.
+        \n\n The following are features or implementations that were required for this app to work.</item>
+ <item>        \n\n <b>Adapters and POJO class</b>
+        \n The POJO class contained the get and setter methods (setters not used.) The Adapter was used
+        to implement the listView and update it to show results from the public Google Books API.</item>
+<item>        \n\n <b>AsyncTask and Loaders</b>
+        \n AsyncTask was initially used to stop the downloading/UI updater from hogging up the main thread,
+        thus pause the app of all functionality during its runtime. AsyncTask presented an issue where
+        a destroy() would cause the app to onCreate() all over again and thus go back to loading. This issue
+        was fixed using Loader Managers and AsyncTaskLoaders. Now a recreate such as screen rotation will
+        no longer require redownload and subsequent UI updates.</item>
+<item>        \n\n <b>Animation, TranslationAnimation, and ObjectAnimator</b>
+        \n Used to update the UI via the "advanced" button located on the top right of the screen.
+        Animation was used for light animation such as the editText's slight movements while no text is
+        present. TranslationAnimation was used for the onscreen item shifts. The issue presented was
+        that the TranslationAnimation would cause the view to visibly move from it's original position to
+        the new position, but its essence and functionality remained where it initially was as oppose to the new position.
+        A remedy for this was an listener to figure out when the view was done with its moves and shift the UI.
+        This however caused the animation to flickr before reaching its destination. ObjectAnimator, the newer
+        of the bunch along with overrides of its onFinish, onStart and other methods, did what the other two were not able
+        to do.</item>
+<item>        \n\n <b>Settings and SharedPreferences</b>
+        \n The changes and requirements of the app's small footprint did not require the need for a larger
+        database such as an SQLite table. Instead, a sharedPreferences was the preference here to store key/value
+        pairs to allow users to have more choice with the app. The settings page demonstrates changing themes
+        dynamically along with updating the UI to reflect theme or option changes. SharedPreferences was used
+</item>
+
+
+    </string>
+
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

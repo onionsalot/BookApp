@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorText">#FFFFFF</color>
+
+    <color name="primary">#673AB7</color>
+    <color name="primary_dark">#512DA8</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="accent">#8BC34A</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+
+
+
+    <color name="background">#6FB16A</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="buttonBackground">#741c7a</color>
+    <color name="notification">#601765</color>
+
+    <color name="textMain">#601765</color>
+    <color name="textSub">#741c7a</color>
+
+
+
+    <color name="eggplantColorPrimary">#6FB16A</color><!-- Main Background Color -->
+    <color name="eggplantColorToolbar">#741c7a</color><!-- Main Toolbar Color -->
+    <color name="eggplantColorPrimaryDark">#601765</color><!-- Notification Color -->
+    <color name="eggplantColorAccent">#601765</color><!-- Main Button Color -->
+    <color name="eggplantPrimaryText">#601765</color>
+    <color name="eggplantButtonNormal">#601765</color><!-- Button Background Color -->
+    <color name="eggplantButtonHighlight">#81c784</color>
+    <color name="eggplantButtonText">#FFFFFF</color><!-- Button Text Color -->
+    <color name="eggplantBorderColor">#601765</color><!-- Border Drawable Color -->
+    <color name="eggplantDarkList">#639f5f</color><!-- Alternating dark for list-->
+
+
+    <color name="earthColorPrimary">#DAAD86</color>
+    <color name="earthColorToolbar">#659DBD</color>
+    <color name="earthColorPrimaryDark">#507d97</color>
+    <color name="earthColorAccent">#507d97</color>
+    <color name="earthPrimaryText">#507d97</color>
+    <color name="earthButtonNormal">#659DBD</color>
+    <color name="earthButtonHighlight">#81c784</color>
+    <color name="earthButtonText">#FFFFFF</color>
+    <color name="earthBorderColor">#507d97</color>
+    <color name="earthDarkList">#C49B78</color><!-- Alternating dark for list-->
+
+
+    <color name="cottonColorPrimary">#86a4cc</color><!-- Main Background Color -->
+    <color name="cottonColorToolbar">#ffa8bd</color><!-- Main Toolbar Color -->
+    <color name="cottonColorPrimaryDark"> #cc8697</color><!-- Notification Color -->
+    <color name="cottonColorAccent">#cc8697</color><!-- Main Button Color -->
+    <color name="cottonPrimaryText">#ffa8bd</color>
+    <color name="cottonButtonNormal">#ffa8bd</color><!-- Button Background Color -->
+    <color name="cottonButtonHighlight">#a8cdff</color>
+    <color name="cottonButtonText">#FFFFFF</color><!-- Button Text Color -->
+    <color name="cottonBorderColor">#ffa8bd</color><!-- Border Drawable Color -->
+    <color name="cottonDarkList">#7893b7</color><!-- Alternating dark for list-->
+</resources>

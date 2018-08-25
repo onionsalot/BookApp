@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    style="@style/AppTheme"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/toolbarColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/TitleLayout"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.128">
+
+
+        <EditText
+            android:id="@+id/search_field_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/borderColor"
+            android:ellipsize="end"
+            android:hint="Separate keywords with spaces.."
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="By: Title"
+            android:textColor="?attr/borderTextColor" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/AuthorLayout"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <EditText
+            android:id="@+id/search_field_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/borderColor"
+            android:ellipsize="end"
+            android:hint="Separate keywords with spaces.."
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="By: Author"
+            android:textColor="?attr/borderTextColor" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/GeneralLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/borderColor"
+            android:ellipsize="end"
+            android:hint="Separate keywords with spaces.."
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/general_search"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="General Search"
+            android:textColor="?attr/borderTextColor" />
+
+        <Button
+            android:id="@+id/search_button"
+            style="@style/Widget.Button.Primary"
+            android:layout_width="100sp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/search_field"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="-10dp"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:text="Search"
+
+            app:layout_constraintHorizontal_bias="0.97" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/advance_button"
+        style="@style/Widget.Button.Primary"
+        android:layout_width="121dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="244dp"
+        android:autoSizeMaxTextSize="12sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:color/transparent"
+        android:text="Advance >>"
+        app:layout_constraintEnd_toEndOf="@+id/GeneralLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/GeneralLayout"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+
+</android.support.constraint.ConstraintLayout>

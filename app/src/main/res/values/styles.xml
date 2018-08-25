@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="primaryButtonTheme">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorPrimary">@color/eggplantColorPrimary</item>
+        <item name="colorPrimaryDark">@color/eggplantColorPrimaryDark</item>
+        <item name="colorAccent">@color/eggplantColorAccent</item>
+        <item name="primaryTextColor">@color/eggplantPrimaryText</item>
+        <item name="buttonNormalColor">@color/eggplantButtonNormal</item>
+        <item name="buttonHighlightColor">
+            @color/earthButtonHighlight
+        </item>
+        <item name="buttonTextColor">@color/eggplantButtonText</item>
+        <item name="borderColor">@drawable/button_round_corner</item>
+        <item name="borderTextColor">@color/eggplantBorderColor</item>
+        <item name="android:colorBackground">@color/eggplantColorPrimary</item>
+        <item name="toolbarColor">@color/eggplantColorToolbar</item>
+        <item name="darkListColor">@color/eggplantDarkList</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+    <style name="AppTheme.Earth" parent="Theme.AppCompat.NoActionBar">
+        <item name="primaryButtonTheme">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorPrimary">@color/earthColorPrimary</item>
+        <item name="colorPrimaryDark">@color/earthColorPrimaryDark</item>
+        <item name="colorAccent">@color/earthColorAccent</item>
+        <item name="primaryTextColor">@color/earthPrimaryText</item>
+        <item name="buttonNormalColor">@color/earthButtonNormal</item>
+        <item name="buttonHighlightColor">
+            @color/earthButtonHighlight
+        </item>
+        <item name="buttonTextColor">@color/earthButtonText</item>
+        <item name="borderColor">@drawable/button_round_corner_earth</item>
+        <item name="borderTextColor">@color/earthBorderColor</item>
+        <item name="android:colorBackground">@color/earthColorPrimary</item>
+        <item name="toolbarColor">@color/earthColorToolbar</item>
+        <item name="darkListColor">@color/earthDarkList</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+    <style name="AppTheme.3" parent="Theme.AppCompat.NoActionBar">
+        <item name="primaryButtonTheme">
+            @style/Widget.AppCompat.Button.Colored
+        </item>
+        <item name="colorPrimary">@color/cottonColorPrimary</item>
+        <item name="colorPrimaryDark">@color/cottonColorPrimaryDark</item>
+        <item name="colorAccent">@color/cottonColorToolbar</item>
+        <item name="primaryTextColor">@color/cottonPrimaryText</item>
+        <item name="buttonNormalColor">@color/cottonButtonNormal</item>
+        <item name="buttonHighlightColor">
+            @color/cottonButtonHighlight
+        </item>
+        <item name="buttonTextColor">@color/cottonButtonText</item>
+        <item name="borderColor">@drawable/button_round_corner_cotton</item>
+        <item name="borderTextColor">@color/cottonBorderColor</item>
+        <item name="android:colorBackground">@color/cottonColorPrimary</item>
+        <item name="toolbarColor">@color/cottonColorToolbar</item>
+        <item name="darkListColor">@color/cottonDarkList</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="Widget.Button.Primary"
+        parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">?attr/buttonNormalColor</item>
+        <item name="colorControlHighlight">
+            ?attr/buttonHighlightColor
+        </item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+    </style>
+
+
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+    </style>
+
+
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+    </style>
+</resources>

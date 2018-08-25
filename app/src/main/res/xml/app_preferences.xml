@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/colorPrimary">
+    <PreferenceCategory android:title="Current Theme" >
+        <ListPreference
+            android:title="Eggplant (default)"
+            android:summary="Select your favorite theme"
+            android:key="theme"
+            android:defaultValue="1"
+            android:entries="@array/themeArray"
+            android:entryValues="@array/themeValues" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Results Displayed" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showBooks"
+            android:title="Show Books" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showMags"
+            android:title="Show Magazines" />
+        <ListPreference
+            android:title="Results per search (10)"
+            android:summary="Select the amount of results you wish to display (40 max)"
+            android:key="resultsReturned"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

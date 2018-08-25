@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="60dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <!-- behavior_peekHeight: Defines the height of the visible part. -->
+    <!-- behavior_hideable: Defines if the bottom sheet can be hidden by swiping it down. -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/bottom_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/base_arrow" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="?attr/colorPrimaryDark"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:text="Book lookup App; Notes\n This demo app was intended for testing purposes only. While fully functional for what it is,I intended to use it as grounds for testing features and functions that would a good addition to such an app.\n\n The following are features or implementations that were required for this app to work.
+            \n\n
+            Adapters and POJO class
+            \n The POJO class contained the get and setter methods (setters not used.) The Adapter was used to implement the listView and update it to show results from the public Google Books API.
+            \n\n
+            AsyncTask and Loaders
+            \n AsyncTask was initially used to stop the downloading/UI updater from hogging up the main thread, thus pause the app of all functionality during its runtime. AsyncTask presented an issue where a destroy() would cause the app to onCreate() all over again and thus go back to loading. This issue was fixed using Loader Managers and AsyncTaskLoaders. Now a recreate such as screen rotation will no longer require redownload and subsequent UI updates.
+            \n\n
+            Animation, TranslationAnimation, and ObjectAnimator
+            \n Used to update the UI via the advanced button located on the top right of the screen.Animation was used for light animation such as the editText's slight movements while no text is present. TranslationAnimation was used for the onscreen item shifts. The issue presented was that the TranslationAnimation would cause the view to visibly move from it's original position to the new position, but its essence and functionality remained where it initially was as oppose to the new position. A remedy for this was an listener to figure out when the view was done with its moves and shift the UI. This however caused the animation to flickr before reaching its destination. ObjectAnimator, the newer of the bunch along with overrides of its onFinish, onStart and other methods, did what the other two were not able to do.
+            \n\n
+            Settings and SharedPreferences
+            \n The changes and requirements of the app's small footprint did not require the need for a larger database such as an SQLite table. Instead, a sharedPreferences was the preference here to store key/value pairs to allow users to have more choice with the app. The settings page demonstrates changing themes dynamically along with updating the UI to reflect theme or option changes.
+            \n\n
+            Themes
+            \n Themes and choices were the focus of the settings activity. 3 Custom themes were created for the user to pick between. They're all dynamically stored through attributed and not hardcoded. They are easily created and coding wise, only an entry addition into the Settings Activity is needed. The colors are stored in XML and can be edited through those. Due to the ease of implementation, it may also be a feature down the line that -can- be added where the user can craft their own themes using only hex color codes.
+            \n\n
+            BottomSheetBehaviors and NestedViews
+            \n You're viewing one right now! This is a bottom sheet that is part of a coordinatedView which contains the toolbar, main activity and the bottom bar. The bottom sheet consists of the arrow used to drag upwards and what is known as a peek. Below that is the body of the view itself which is a large TextView that is a child of a NestedScrollView. This allows the Text to be scrollable inside of the bottom sheet.
+            \n\n
+            Injections slowdown
+            \n While the code has been commented out, the lag injection method was created to simulate less than ideal network conditions where internet is slow and taking a while to connect. The progress circle was made to show users that we are still trying to fetch their data. If a 200 response is unable to be grabbed after 15 seconds, the response will come back automatically as network error and to try again.
+
+
+"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
